@@ -1,0 +1,24 @@
+{
+  "name": "workshop-aframe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "aframe.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./live-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maker-space-experimenta/workshop-aframe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maker-space-experimenta/workshop-aframe/issues"
+  },
+  "homepage": "https://github.com/maker-space-experimenta/workshop-aframe#readme",
+  "dependencies": {
+    "aframe": "^1.2.0",
+    "live-server": "^1.2.1"
+  }
+}
