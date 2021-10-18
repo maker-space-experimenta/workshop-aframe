@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <script src="/components/aframe/dist/aframe.js"></script>
+    <script src="/components/aframe-extras/dist/aframe-extras.min.js"></script>
+    <script src="./assets/aframe-stl-loader.js"></script>
+    <script src="./assets/zip.js"></script>
+
+
+    <script src="./app.js"></script>
+</head>
+
+<body>
+    <a-scene>
+
+        <a-assets>
+            <a-asset-item id="DeadOak1" src="./assets/borrow_tree.obj"></a-asset-item>
+
+            <a-asset-item response-type="arraybuffer" id="TreeTrunk4" src="./assets/Tree_4_trunk.stl"></a-asset-item>
+            <a-asset-item response-type="arraybuffer" id="Tree4" src="./assets/Tree_4_tree.stl"></a-asset-item>
+
+            <img id="DeadOak1Texture" src="./assets/low-poly-wood/TreesTexture/DeadOakTreeTrunk.png">
+            <img id="LeafTexture" src="./assets/low-poly-wood/TreesTexture/SpruceTreeLeaf.png">
+        </a-assets>
+
+
+
+        <a-entity position="0 2 0" id="tree4template" multiply="count: 100; from:20,20,0; to:-20,-20,2;">
+            <a-entity stl-model="src: #TreeTrunk4;" scale="0.05 0.05 0.05" position="0 0 -4" material="shader: standard; src: #DeadOak1Texture"></a-entity>
+            <a-entity stl-model="src: #Tree4;" scale="0.05 0.05 0.05" position="0 4 -4" material="shader: standard; src: #LeafTexture"></a-entity>
+        </a-entity>
+        
+
+
+        <a-plane position="0 -1 0" rotation="-90 0 0" width="40" height="40" color="#7BC8A4"></a-plane> -->
+        <a-sky color="#444"></a-sky>
+
+
+    </a-scene>
+</body>
+
+</html>

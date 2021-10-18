@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <script src="/components/aframe/dist/aframe.js"></script>
+    <script src="/components/aframe-extras/dist/aframe-extras.min.js"></script>
+    <script src="./assets/aframe-stl-loader.js"></script>
+    <script src="./assets/zip.js"></script>
+    <script src="/components/aframe-teleport-controls/dist/aframe-teleport-controls.js"></script>
+
+
+    <script src="./app.js"></script>
+</head>
+
+<body>
+    <a-scene>
+
+        <a-assets>
+            <a-asset-item id="DeadOak1" src="./assets/borrow_tree.obj"></a-asset-item>
+
+            <a-asset-item response-type="arraybuffer" id="TreeTrunk4" src="./assets/Tree_4_trunk.stl"></a-asset-item>
+            <a-asset-item response-type="arraybuffer" id="Tree1" src="./assets/Tree_1_tree.stl"></a-asset-item>
+            <a-asset-item response-type="arraybuffer" id="Tree2" src="./assets/Tree_2_tree.stl"></a-asset-item>
+            <a-asset-item response-type="arraybuffer" id="Tree3" src="./assets/Tree_3_tree.stl"></a-asset-item>
+            <a-asset-item response-type="arraybuffer" id="Tree4" src="./assets/Tree_4_tree.stl"></a-asset-item>
+
+            <img id="DeadOak1Texture" src="./assets/low-poly-wood/TreesTexture/DeadOakTreeTrunk.png">
+            <img id="LeafTexture" src="./assets/low-poly-wood/TreesTexture/SpruceTreeLeaf.png">
+        </a-assets>
+
+
+
+        <a-entity position="0 2 0" multiply="count: 10; from:20,20,0; to:-20,-20,2;">
+            <a-entity stl-model="src: #TreeTrunk4;" scale="0.05 0.05 0.05" position="0 0 -4" material="shader: standard; src: #DeadOak1Texture"></a-entity>
+            <a-entity stl-model="src: #Tree1;" scale="0.05 0.05 0.05" position="0 4 -4" material="shader: standard; src: #LeafTexture"></a-entity>
+        </a-entity>
+
+        <a-entity position="0 2 2" multiply="count: 10; from:20,20,0; to:-20,-20,2;">
+            <a-entity stl-model="src: #TreeTrunk4;" scale="0.05 0.05 0.05" position="0 0 -4" material="shader: standard; src: #DeadOak1Texture"></a-entity>
+            <a-entity stl-model="src: #Tree2;" scale="0.05 0.05 0.05" position="0 4 -4" material="shader: standard; color: #517f1f"></a-entity>
+        </a-entity>
+
+        <a-entity position="2 2 4" multiply="count: 20; from:20,20,0; to:-20,-20,2;">
+            <a-entity stl-model="src: #TreeTrunk4;" scale="0.05 0.05 0.05" position="0 0 -4" material="shader: standard; src: #DeadOak1Texture"></a-entity>
+            <a-entity stl-model="src: #Tree3;" scale="0.05 0.05 0.05" rotation="-90 0 0" position="0 2 -4" material="shader: standard; color: #237f1f"></a-entity>
+        </a-entity>
+
+        <a-entity position="3 2 7" multiply="count: 20; from:20,20,0; to:-20,-20,2;">
+            <a-entity stl-model="src: #TreeTrunk4;" scale="0.05 0.05 0.05" position="0 0 -4" material="shader: standard; src: #DeadOak1Texture"></a-entity>
+            <a-entity stl-model="src: #Tree4;" scale="0.05 0.05 0.05" position="0 4 -4" material="shader: standard; color: #87c109"></a-entity>
+        </a-entity>
+        
+
+
+        <a-plane position="0 -1 0" rotation="-90 0 0" width="40" height="40" color="#7BC8A4"></a-plane> -->
+        <a-sky color="#444"></a-sky>
+
+                
+        
+        <a-entity  id="cameraRig" wasd-controls>
+            <!-- <a-box ></a-box> -->
+            <!-- camera -->
+            <a-entity id="head" position="0 1.6 0" camera look-controls></a-entity>
+            <!-- hand controls -->
+            <a-entity id="left-hand" vive-controls="hand: left" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;"></a-entity>
+            <a-entity id="right-hand" vive-controls="hand: right" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;"></a-entity>
+        </a-entity>
+
+
+    </a-scene>
+</body>
+
+</html>

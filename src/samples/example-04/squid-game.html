@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <script src="/components/aframe/dist/aframe.js"></script>
+    <script src="/components/aframe-teleport-controls/dist/aframe-teleport-controls.js"></script>
+    <script src="/components/aframe-physics-system/dist/aframe-physics-system.js"></script>
+
+
+    <script src="./app.js"></script>
+</head>
+
+<body>
+    <a-scene physics="debug: true">
+
+        <a-box position="o 0 0" rotation="0 45 0" color="#4CC3D9"></a-box>
+
+        <a-entity  position="0 0 0">
+            <a-box static-body="shape: box; mass: 2" position="0 0 0"  height="0.21" width="2.4" depth="1" rotation="0 0 0" color="#4CC3D9"></a-box>
+            <a-box static-body="shape: box; mass: 2" position="0 0 -10" height="0.2" width="0.2" depth="20" rotation="0 0 0" color="#444"></a-box>
+            <a-box static-body="shape: box; mass: 2" position="1.05 0 -10" height="0.2" width="0.2" depth="20" rotation="0 0 0" color="#444"></a-box>
+            <a-box static-body="shape: box; mass: 2" position="-1.05 0 -10" height="0.2" width="0.2" depth="20" rotation="0 0 0" color="#444"></a-box>
+
+            <a-box static-body="shape: box; mass: 2" position="0.6 0 -2" opacity="0.5" height="0.05" width="1" depth="1" rotation="0 0 0" color="#4CC3D9"></a-box>
+            <a-box static-body="shape: box; mass: 2" position="0.6 0 -4" opacity="0.5" height="0.05" width="1" depth="1" rotation="0 0 0" color="#4CC3D9"></a-box>
+            <a-box position="0.6 0 -6" opacity="0.5" height="0.05" width="1" depth="1" rotation="0 0 0" color="#4CC3D9"></a-box>
+            <a-box static-body="shape: box; mass: 2" position="0.6 0 -8" opacity="0.5" height="0.05" width="1" depth="1" rotation="0 0 0" color="#4CC3D9"></a-box>
+            <a-box position="0.6 0 -10" opacity="0.5" height="0.05" width="1" depth="1" rotation="0 0 0" color="#4CC3D9"></a-box>
+            <a-box static-body="shape: box; mass: 2" position="0.6 0 -12" opacity="0.5" height="0.05" width="1" depth="1" rotation="0 0 0" color="#4CC3D9"></a-box>
+            <a-box static-body="shape: box; mass: 2" position="0.6 0 -14" opacity="0.5" height="0.05" width="1" depth="1" rotation="0 0 0" color="#4CC3D9"></a-box>
+            <a-box position="0.6 0 -16" opacity="0.5" height="0.05" width="1" depth="1" rotation="0 0 0" color="#4CC3D9"></a-box>
+            <a-box position="0.6 0 -18" opacity="0.5" height="0.05" width="1" depth="1" rotation="0 0 0" color="#4CC3D9"></a-box>
+            <a-box static-body="shape: box; mass: 2" position="0.6 0 -20" opacity="0.5" height="0.05" width="1" depth="1" rotation="0 0 0" color="#4CC3D9"></a-box>
+
+            <a-box position="-0.6 0 -2" opacity="0.5" height="0.05" width="1" depth="1" rotation="0 0 0" color="#4CC3D9"></a-box>
+            <a-box position="-0.6 0 -4" opacity="0.5" height="0.05" width="1" depth="1" rotation="0 0 0" color="#4CC3D9"></a-box>
+            <a-box static-body="shape: box; mass: 2" position="-0.6 0 -6" opacity="0.5" height="0.05" width="1" depth="1" rotation="0 0 0" color="#4CC3D9"></a-box>
+            <a-box position="-0.6 0 -8" opacity="0.5" height="0.05" width="1" depth="1" rotation="0 0 0" color="#4CC3D9"></a-box>
+            <a-box static-body="shape: box; mass: 2" position="-0.6 0 -10" opacity="0.5" height="0.05" width="1" depth="1" rotation="0 0 0" color="#4CC3D9"></a-box>
+            <a-box position="-0.6 0 -12" opacity="0.5" height="0.05" width="1" depth="1" rotation="0 0 0" color="#4CC3D9"></a-box>
+            <a-box position="-0.6 0 -14" opacity="0.5" height="0.05" width="1" depth="1" rotation="0 0 0" color="#4CC3D9"></a-box>
+            <a-box static-body="shape: box; mass: 2" position="-0.6 0 -16" opacity="0.5" height="0.05" width="1" depth="1" rotation="0 0 0" color="#4CC3D9"></a-box>
+            <a-box static-body="shape: box; mass: 2" position="-0.6 0 -18" opacity="0.5" height="0.05" width="1" depth="1" rotation="0 0 0" color="#4CC3D9"></a-box>
+            <a-box position="-0.6 0 -20" opacity="0.5" height="0.05" width="1" depth="1" rotation="0 0 0" color="#4CC3D9"></a-box>
+        </a-entity>
+
+
+        <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box> -->
+        <!-- <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+        <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+        <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane> -->
+        <a-sky color="#111"></a-sky>
+
+        <!-- <a-entity vive-cont rols="hand: left"></a-entity>
+        <a-entity vive-controls="hand: right"></a-entity>
+
+        <a-entity laser-controls="hand: right"></a-entity>
+        <a-entity laser-controls="hand: left"></a-entity> -->
+
+
+        <a-box position="0 1 0" dynamic-body="shape: box; mass: 2" id="cameraRig" width="0.2" depth="0.2" height="0.2">
+            <!-- camera -->
+            <a-entity id="head" position="0 1.6 0" camera wasd-controls look-controls></a-entity>
+            <!-- hand controls -->
+            <a-entity id="left-hand" vive-controls="hand: left" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;"></a-entity>
+            <a-entity id="right-hand" vive-controls="hand: right" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;"></a-entity>
+        </a-box>
+
+
+
+    </a-scene>
+</body>
+
+</html>
